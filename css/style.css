@@ -1,0 +1,294 @@
+/*
+Musiktherapie Backnang - Stylesheet
+
+Author: Moritz Peuser 
+				<http://415s.de>
+
+Table of contents:
+	- layout
+	- typography
+	- forms
+	- custom elements
+
+All rights reserved.
+*/
+* {
+	padding: 0px;
+	margin: 0px;
+}
+/* layout */
+.wrapper {
+	margin: auto;
+	overflow: hidden;
+	width: 800px;
+}
+
+.wrapperFold {
+	margin: auto;
+	overflow: hidden;
+	width: 823px;
+}
+
+body {
+	background: #F0F0F0;
+}
+
+#topBox {
+	overflow: hidden;
+	height: 100px;
+	background: url(img/topBox-bg.png) repeat-x;
+}
+
+#topBox h1 {
+	display: none;
+}
+
+#topBox ul {
+	list-style: none;
+	margin-top: 33px;
+	padding-left: 28px;
+}
+
+#topBox ul li {
+	float: left;
+	margin-right: 30px;
+}
+
+#topBox ul li a {
+	display: block;
+	height: 31px;
+	text-indent: -9999px;
+}
+
+#topBox .homeLink, #topBox .musiktherapieLink, #topBox .angebotLink, #topBox .kontaktLink, #topBox .zurpersonLink {
+	background: url(img/navLinks.png);
+}
+
+#topBox .homeLink {
+	width: 69px;
+	background-position: 0px 31px;
+}
+
+#topBox .homeLink:hover, #topBox .homeLink.active {
+	background-position: 0px 0px;
+}
+
+#topBox .musiktherapieLink {
+	width: 177px;
+	background-position: 456px 31px;
+}
+
+#topBox .musiktherapieLink:hover, #topBox .musiktherapieLink.active {
+	background-position: 456px 0px;
+}
+
+#topBox .angebotLink {
+	width: 87px;
+	background-position: 279px 31px;
+}
+
+#topBox .angebotLink:hover, #topBox .angebotLink.active {
+	background-position: 279px 0px;
+}
+
+#topBox .kontaktLink {
+	width: 82px;
+	background-position: 192px 31px;
+}
+
+#topBox .kontaktLink:hover, #topBox .kontaktLink.active {
+	background-position: 192px 0px;
+}
+
+#topBox .zurpersonLink {
+	width: 110px;
+	background-position: 110px 31px;
+}
+
+#topBox .zurpersonLink:hover, #topBox .zurpersonLink.active {
+	background-position: 110px 0px;
+}
+
+#foldBox {
+	height: 350px;
+	background: black;
+	overflow: hidden;
+}
+
+#foldBox  a {
+	text-decoration: none;
+}
+
+#foldBox a img {
+	border: none;
+}
+
+#contentBox {
+	background: #F0F0F0 url(img/contentBox-bg.png) repeat-x;
+	padding-top: 40px;
+}
+
+#contentBox p, #contentBox h2, #contentBox h3, #contentBox h4, #contentBox h5, #contentBox h6, #contentBox label, #contentBox table, #contentBox input, #contentBox ul, #contentBox ol, #contentBox address, #contentBox iframe {
+	margin: 0px 41px 5px 41px;
+}
+
+#contentBox h2, #contentBox h3, #contentBox h4, #contentBox h5, #contentBox h6 {
+	margin-top: 25px;
+}
+
+#contentBox h2.firstItem {
+	margin-top: 0px !important;
+}
+#contentBox a {
+	text-decoration: none;
+	border-bottom: 1px solid #422B1A;
+	color: black;
+}
+
+#contentBox address {
+	font-style: normal;
+	font-weight: bold;
+}
+
+#contentBox a:hover {
+	border-bottom: 1px solid #2C6D18;
+}
+
+#bottomBox {
+	background: #19410D url(img/bottomBox-bg.png) repeat-x top center;
+	padding: 40px 0px;;
+}
+
+#bottomBox p, #bottomBox h2, #bottomBox h3, #bottomBox h4, #bottomBox h5, #bottomBox h6, #bottomBox label, #bottomBox table, #bottomBox input, #bottomBox ul, #bottomBox ol, #bottomBox address {
+	margin: 0px 41px 5px 41px;
+}
+
+.thumbs {
+	list-style: none;
+}
+
+.thumbs li {
+	float: left;
+	margin-top: 20px;
+}
+
+.thumbs li a {
+	text-decoration: none;
+	display: block;
+	background: url(img/thumbs-bg.png) no-repeat;
+	width: 114px;
+	height: 79px;
+	padding: 6px 10px 12px 9px;
+	outline: none;
+	border: none !important;
+}
+
+.thumbs li a img {
+	border: none;
+	margin-left: 7px;
+}
+/* typography */
+#contentBox, #bottomBox {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#contentBox p {
+	font-size: 16px;
+	color: black;
+	line-height: 23px;
+	margin-bottom: 15px;
+}
+
+#contentBox ul {
+	padding-left: 15px;
+	margin-bottom: 15px;
+}
+
+#bottomBox {
+	color: white;
+}
+
+#bottomBox address {
+	font-style: normal;
+}
+
+#bottomBox address a {
+	color: white;
+	text-decoration: none;
+}
+
+#bottomBox address a:hover {
+	text-decoration: underline;
+}
+/* custom elements */
+.thumbsOpen {
+	background: url(img/thumbsOpen.png) no-repeat;
+	width: 31px;
+	height: 31px;
+	text-indent: -9999px;
+	position: relative;
+	top: -10px;
+	left: 20px;
+}
+
+/*.praxis-fuer-musiktherapie {
+	background: url(img/headings/praxis_fuer_musiktherapie.png) no-repeat;
+	width: 325px;
+	height: 36px;
+	text-indent: -9999px;
+}
+
+.praxis-fuer-musiktherapie_smaller {
+	background: url(img/headings/praxis_fuer_musiktherapie_smaller.png) no-repeat;
+	width: 238px;
+	height: 27px;
+	text-indent: -9999px;
+}
+
+.formen-der-musiktherapie {
+	background: url(img/headings/formen_der_musiktherapie.png) no-repeat;
+	width: 348px;
+	height: 36px;
+	text-indent: -9999px;
+}
+
+.schwerpunkte {
+	background: url(img/headings/schwerpunkte.png) no-repeat;
+	width: 184;
+	height: 36px;
+	text-indent: -9999px;
+}
+
+.anwendungsgebiete-ziele {
+	background: url(img/headings/anwendungsgebiete_ziele.png) no-repeat;
+	width: 367px;
+	height: 36px;
+	text-indent: -9999px;
+}
+
+.aktuelle-angebote {
+	background: url(img/headings/aktuelle_angebote.png) no-repeat;
+	width: 249px;
+	height: 36px;
+	text-indent: -9999px;
+}
+
+.musiktherapie-bei-kindern-und-jugendlichen-mit-migraene {
+	background: url(img/headings/musiktherapie-bei-kindern-und-jugendlichen-mit-migraene.png) no-repeat;
+	width: 724px;
+	height: 101px;
+	text-indent: -9999px;
+}
+
+.kontakt {
+	background: url(img/headings/kontakt.png) no-repeat;
+	width: 123px;
+	height: 35px;
+	text-indent: -9999px;
+	padding-bottom: 20px;
+}
+*/
+.details {
+	font-size: 12px !important;
+	line-height: 16px !important;
+}
